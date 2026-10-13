@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarautz Surf Festival 2026</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="../csstot/style.css">
+    <link rel="icon" href="../favicon.png">
+    <script src="../js/hamburguer.js"></script>
+   <script src="../js/modal_benvinguda.js"></script>
+</head>
+<body>
+   
+    <header>
+        <div>
+          <img class="logo" src="../IMG_6217-Photoroom.png" alt="Zarautz Surf Festival Logo">
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu" id="menu">
+            <li><a href="../codi/index.html">Inici</a></li>
+            <li><a href="#">Lloguer</a>
+                <ul>
+                    <li><a href="#taules">Taules</a></li>
+                </ul>
+            </li>
+            <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            <li><a href="../contacte/contacte.html">Contacte</a></li>
+            <li><a href="../registre/registre.html">Registre</a></li>
+            <li><a href="../galeria/galeria.html">Galeria</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Modal de benvinguda: es mostra el primer cop que es visita la web -->
+        <div class="modal-benvinguda" id="modalBenvinguda" role="dialog" aria-modal="true">
+            <div class="modal-benvinguda-content">
+                <h2>Benvinguts!</h2>
+                <p>Benvinguts al <strong>Zarautz Surf Festival 2026</strong>.<br>
+                Del 17 al 19 de juliol, surf, música i cultura a la costa basca.</p>
+                <button onclick="tancarModalBenvinguda()">Entrar al Festival</button>
+            </div>
+        </div>
+
+        <section>
+            <div class="principal">
+                <h1 class="titol">Zarautz Surf Festival 2026</h1>
+                <h3>Since 1975</h3>
+                <h3>Surf · Música · Cultura</h3>
+                <h3>17 - 19 juliol 2026</h3>
+            </div>
+            <button><a href="../registre/registre.html">Registra't</a></button>
+            <img class="img" src="../fondo inici.jpg" alt="Platja de Zarautz">
+        </section>
+
+        <section class="benvinguda">
+            <h2>Benvinguts</h2>
+            <p>El Festival de Surf de Zarautz és un esdeveniment únic que celebra la passió pel mar,
+            l'esport i la cultura surfista en un dels llocs més emblemàtics de la costa vasca.</p>
+            <p>Durant tot el cap de setmana, podreu gaudir de competicions, classes d'iniciació, activitats
+            per a totes les edats i música en directe a la platja. Tant si sou principiants com surfistes
+            experimentats, aquest festival està pensat perquè tothom pugui participar i divertir-se.</p>
+            <p>Vine a descobrir l'ambient de Zarautz, aprèn a surfar, anima als participants i viu una
+            experiència inoblidable al costat del mar!</p>
+        </section>
+
+        <section class="dades">
+            <div class="centrattext">
+                <h2>Dates</h2>
+                <p>El Zarautz Surf Festival 2026 se celebrarà durant tres dies plens d'activitats, surf i música a la platja de Zarautz.
+                L'esdeveniment tindrà lloc del <strong>17 al 19 de juliol de 2026</strong>, coincidint amb un dels millors moments de l'any per practicar surf a la costa basca.</p>
+                <p>Durant aquests dies podràs gaudir de competicions, classes, concerts i activitats per a totes les edats.</p>
+            </div>
+            <div class="calendari">
+                <div class="dia"><h3>Divendres 17</h3></div>
+                <div class="dia"><h3>Dissabte 18</h3></div>
+                <div class="dia"><h3>Diumenge 19</h3></div>
+            </div>
+        </section>
+
+        <section class="activitats">
+            <h2>Activitats destacades</h2>
+            <ul>
+                <li>Classes de surf amb monitors professionals</li>
+                <li>Sessió lliure amb material inclòs</li>
+                <li>Tallers d'introducció al surf</li>
+                <li>Competicions per nivells</li>
+                <li>Concerts i activitats culturals</li>
+            </ul>
+            <div class="contenedor_imatges">
+                <img src="../Pukas Surf Shop.jpg" alt="Pukas Surf Shop">
+                <img src="../taules de surf .jpeg" alt="Taules de surf">
+            </div>
+        </section>
+
+        <section>
+            <h2>Itinerari d'activitats</h2>
+            <table class="taula_horari">
+                <tr>
+                    <th>Hora</th>
+                    <th>Divendres</th>
+                    <th>Dissabte</th>
+                    <th>Diumenge</th>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>Tallers d'introducció al surf</td>
+                    <td>Classes de surf iniciació</td>
+                    <td>Classes de surf iniciació</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Competicions</td>
+                    <td>Competicions</td>
+                    <td>Competició amateur</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td>Final competicions</td>
+                    <td>Final competicions</td>
+                    <td>Final competició amateur</td>
+                </tr>
+                <tr>
+                    <td>13:15</td>
+                    <td>Dinar popular a la platja</td>
+                    <td>Vermut a la platja</td>
+                    <td>Comiat i refrigeri</td>
+                </tr>
+                <tr>
+                    <td>17:00</td>
+                    <td>Voley platja</td>
+                    <td>Surf per als més petits</td>
+                    <td>Entrega de premis</td>
+                </tr>
+                <tr>
+                    <td>19:00</td>
+                    <td>DJ Session a la platja</td>
+                    <td>DJ Session a la platja</td>
+                    <td>Concert de cloenda</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="material">
+            <h2>Lloguer de material</h2>
+            <p>Durant el festival podràs llogar material de surf directament a la platja de Zarautz.</p>
+            <p>El material està inclòs en les activitats del festival i adaptat a tots els nivells.</p>
+            <div class="caixa-material">
+                <div class="tipografiamaterial">
+                    <h3>Material disponible</h3>
+                </div>
+                <ul class="llista-material">
+                    <li>Taules per a principiants</li>
+                    <li>Taules intermèdies</li>
+                    <li>Taules avançades</li>
+                    <li>Neoprens</li>
+                    <li>Accessoris de surf</li>
+                </ul>
+            </div>
+            <img src="../pexels-kampus-7967357-Photoroom.png" alt="Material de surf">
+            <img src="../pexels-jonathanborba-19641781-Photoroom.png" alt="Surfista">
+        </section>
+
+        <section class="fototaula-section">
+            <div class="fototaula-bg"></div>
+            <h2 id="taules">Les nostres taules</h2>
+            <div class="fototaula">
+                <img src="../1-Photoroom.png" alt="Taula 1">
+                <img src="../2-Photoroom.png" alt="Taula 2">
+                <img src="../3-Photoroom.png" alt="Taula 3">
+                <img src="../4-Photoroom.png" alt="Taula 4">
+                <img src="../5-Photoroom.png" alt="Taula 5">
+            </div>
+        </section>
+
+        <button><a href="../contacte/contacte.html">Contacta'ns</a></button>
+    </main>
+
+    <footer>
+        <!-- Patrocinadors amb flipcard -->
+        <section class="patrocinadors">
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../decathlon.webp" alt="Decathlon">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Decathlon</span>
+                        <a href="https://www.decathlon.es" target="_blank" rel="noopener">decathlon.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Havaianas_brand_logo.png" alt="Havaianas">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Havaianas</span>
+                        <a href="https://www.havaianas.com" target="_blank" rel="noopener">havaianas.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Kutxabank.svg.png" alt="Kutxabank">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Kutxabank</span>
+                        <a href="https://www.kutxabank.es" target="_blank" rel="noopener">kutxabank.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Prime_Hydration_logo.png" alt="Prime Hydration">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Prime</span>
+                        <a href="https://drinkprime.com" target="_blank" rel="noopener">drinkprime.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../red-bull-logo-2-1.png" alt="Red Bull">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Red Bull</span>
+                        <a href="https://www.redbull.com" target="_blank" rel="noopener">redbull.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="xxss">
+            <img src="../logotipo-de-instagram.png" width="50" height="auto" alt="Instagram">
+            <img src="../tik-tok.png" width="40" height="auto" alt="TikTok">
+            <img src="../youtube.png" width="35" height="auto" alt="YouTube">
+            <img src="../gorjeo.png" width="50" height="auto" alt="Twitter/X">
+            <p>
+                <a href="../Termes/Termes.html">Termes i Condicions</a> |
+                <a href="../cookies/cookies.html">Política de Cookies</a> |
+                <a href="../Privadesa/Privadesa.html">Política de Privadesa</a>
+            </p>
+            <p>&copy; 2026 Zarautz Surf Festival - By Marta &amp; Júlia</p>
+        </section>
+    </footer>
+
+   
+</body>
+</html>

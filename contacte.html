@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - Zarautz Surf Festival 2026</title>
+    <link rel="stylesheet" href="../csstot/style.css">
+    <link rel="icon" href="../favicon.png">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="../IMG_6217-Photoroom.png" alt="Zarautz Surf Festival Logo">
+        </div>
+        <!-- Botó hamburger per a mòbil -->
+        <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu" id="menu">
+            <li><a href="../codi/index.html">Inici</a></li>
+            <li><a href="#">Lloguer</a>
+                <ul>
+                    <li><a href="../codi/index.html#taules">Taules</a></li>
+                </ul>
+            </li>
+            <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            <li><a href="../contacte/contacte.html">Contacte</a></li>
+            <li><a href="../registre/registre.html">Registre</a></li>
+            <li><a href="../galeria/galeria.html">Galeria</a></li>
+        </ul>
+    </header>
+
+    <main class="contacte">
+        <h2>Contacta'ns</h2>
+        <div class="contingut-contacte">
+            <div class="columna-esquerra">
+                <p><strong>Adreça:</strong> Playa de Zarautz, 20800</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.8994858442854!2d-2.1710069017970848!3d43.28730740117394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51c85d510ccb2b%3A0xe06f67f9e6197271!2sPlaya%20de%20Zarautz!5e0!3m2!1ses-419!2ses!4v1775649017167!5m2!1ses-419!2ses"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Mapa Platja de Zarautz">
+                </iframe>
+            </div>
+            <div class="columna-dreta">
+                <form id="formContacte" action="/formulari" method="POST" novalidate>
+                    <input id="nom" name="nom" placeholder="Nom Cognom" autocomplete="name"/>
+                    <input id="correuContacte" name="correu" placeholder="Correu electrònic" type="email" autocomplete="email"/>
+                    <span class="error-msg" id="errorCorreuContacte">El correu ha de tenir format usuari@domini.ext</span>
+                    <input id="assumpte" name="assumpte" placeholder="Assumpte"/>
+                    <textarea id="missatge" placeholder="Missatge" name="missatge" rows="6"></textarea>
+                    <input type="submit" value="Enviar"/>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Patrocinadors amb flipcard -->
+        <section class="patrocinadors">
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../decathlon.webp" alt="Decathlon">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Decathlon</span>
+                        <a href="https://www.decathlon.es" target="_blank" rel="noopener">decathlon.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Havaianas_brand_logo.png" alt="Havaianas">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Havaianas</span>
+                        <a href="https://www.havaianas.com" target="_blank" rel="noopener">havaianas.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Kutxabank.svg.png" alt="Kutxabank">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Kutxabank</span>
+                        <a href="https://www.kutxabank.es" target="_blank" rel="noopener">kutxabank.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Prime_Hydration_logo.png" alt="Prime Hydration">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Prime</span>
+                        <a href="https://drinkprime.com" target="_blank" rel="noopener">drinkprime.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../red-bull-logo-2-1.png" alt="Red Bull">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Red Bull</span>
+                        <a href="https://www.redbull.com" target="_blank" rel="noopener">redbull.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="xxss">
+            <img src="../logotipo-de-instagram.png" width="50" height="auto" alt="Instagram">
+            <img src="../tik-tok.png" width="40" height="auto" alt="TikTok">
+            <img src="../youtube.png" width="35" height="auto" alt="YouTube">
+            <img src="../gorjeo.png" width="50" height="auto" alt="Twitter/X">
+            <p>
+                <a href="../Termes/Termes.html">Termes i Condicions</a> |
+                <a href="../cookies/cookies.html">Política de Cookies</a> |
+                <a href="../Privadesa/Privadesa.html">Política de Privadesa</a>
+            </p>
+            <p>&copy; 2026 Zarautz Surf Festival - By Marta &amp; Júlia</p>
+        </section>
+    </footer>
+
+    <script>
+
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            const obert = menu.classList.toggle('obert');
+            hamburger.classList.toggle('actiu');
+            hamburger.setAttribute('aria-expanded', obert);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('obert');
+                hamburger.classList.remove('actiu');
+                hamburger.setAttribute('aria-expanded', false);
+            }
+        });
+
+        function validarCorreu(correu) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+            return regex.test(correu);
+        }
+
+        const campCorreu = document.getElementById('correuContacte');
+        const errorCorreu = document.getElementById('errorCorreuContacte');
+
+    
+        campCorreu.addEventListener('blur', () => {
+            const ok = validarCorreu(campCorreu.value);
+            campCorreu.classList.toggle('error', !ok);
+            errorCorreu.classList.toggle('visible', !ok);
+        });
+
+        document.getElementById('formContacte').addEventListener('submit', (e) => {
+            const ok = validarCorreu(campCorreu.value);
+            campCorreu.classList.toggle('error', !ok);
+            errorCorreu.classList.toggle('visible', !ok);
+            if (!ok) e.preventDefault();
+        });
+    </script>
+</body>
+</html>

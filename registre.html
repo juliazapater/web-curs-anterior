@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre - Zarautz Surf Festival 2026</title>
+    <link rel="stylesheet" href="../csstot/style.css">
+    <link rel="icon" href="../favicon.png">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="../IMG_6217-Photoroom.png" alt="Zarautz Surf Festival Logo">
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu" id="menu">
+            <li><a href="../codi/index.html">Inici</a></li>
+            <li><a href="#">Lloguer</a>
+                <ul>
+                    <li><a href="../codi/index.html#taules">Taules</a></li>
+                </ul>
+            </li>
+            <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            <li><a href="../contacte/contacte.html">Contacte</a></li>
+            <li><a href="../registre/registre.html">Registre</a></li>
+            <li><a href="../galeria/galeria.html">Galeria</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="registre_centre">
+            <h2>Registra't</h2>
+        </div>
+
+        <form class="reg" id="formRegistre" action="/formulari" method="GET" novalidate>
+            <input id="nom" name="nom" placeholder="Nom i Cognom" autocomplete="name"/>
+
+            <input id="correu" name="correu" placeholder="Correu electrònic" type="email" autocomplete="email"/>
+            <span class="error-msg" id="errorCorreu">El correu ha de tenir format usuari@domini.ext</span>
+
+            <input type="password" id="contrasenya" name="contrasenya" placeholder="Contrasenya" autocomplete="new-password"/>
+
+            <input type="password" id="confirmar" name="confirmar" placeholder="Confirmar contrasenya" autocomplete="new-password"/>
+            <span class="error-msg" id="errorConfirmar">Les contrasenyes no coincideixen</span>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <section class="patrocinadors">
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../decathlon.webp" alt="Decathlon">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Decathlon</span>
+                        <a href="https://www.decathlon.es" target="_blank" rel="noopener">decathlon.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Havaianas_brand_logo.png" alt="Havaianas">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Havaianas</span>
+                        <a href="https://www.havaianas.com" target="_blank" rel="noopener">havaianas.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Kutxabank.svg.png" alt="Kutxabank">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Kutxabank</span>
+                        <a href="https://www.kutxabank.es" target="_blank" rel="noopener">kutxabank.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Prime_Hydration_logo.png" alt="Prime Hydration">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Prime</span>
+                        <a href="https://drinkprime.com" target="_blank" rel="noopener">drinkprime.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../red-bull-logo-2-1.png" alt="Red Bull">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Red Bull</span>
+                        <a href="https://www.redbull.com" target="_blank" rel="noopener">redbull.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="xxss">
+            <img src="../logotipo-de-instagram.png" width="50" height="auto" alt="Instagram">
+            <img src="../tik-tok.png" width="40" height="auto" alt="TikTok">
+            <img src="../youtube.png" width="35" height="auto" alt="YouTube">
+            <img src="../gorjeo.png" width="50" height="auto" alt="Twitter/X">
+            <p>
+                <a href="../Termes/Termes.html">Termes i Condicions</a> |
+                <a href="../cookies/cookies.html">Política de Cookies</a> |
+                <a href="../Privadesa/Privadesa.html">Política de Privadesa</a>
+            </p>
+            <p>&copy; 2026 Zarautz Surf Festival - By Marta &amp; Júlia</p>
+        </section>
+    </footer>
+
+    <script>
+
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            const obert = menu.classList.toggle('obert');
+            hamburger.classList.toggle('actiu');
+            hamburger.setAttribute('aria-expanded', obert);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('obert');
+                hamburger.classList.remove('actiu');
+                hamburger.setAttribute('aria-expanded', false);
+            }
+        });
+
+       
+
+
+        function validarCorreu(correu) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+            return regex.test(correu);
+        }
+        const campCorreu = document.getElementById('correu');
+        const campContrasenya = document.getElementById('contrasenya');
+        const campConfirmar = document.getElementById('confirmar');
+        campCorreu.addEventListener('blur', () => {
+            const ok = validarCorreu(campCorreu.value);
+            campCorreu.classList.toggle('error', !ok);
+            document.getElementById('errorCorreu').classList.toggle('visible', !ok);
+        });
+        campConfirmar.addEventListener('input', () => {
+            const coincideixen = campContrasenya.value === campConfirmar.value && campConfirmar.value !== '';
+            campConfirmar.classList.toggle('error', !coincideixen);
+            document.getElementById('errorConfirmar').classList.toggle('visible', !coincideixen);
+        });
+        campContrasenya.addEventListener('input', () => {
+            if (campConfirmar.value !== '') {
+                const coincideixen = campContrasenya.value === campConfirmar.value;
+                campConfirmar.classList.toggle('error', !coincideixen);
+                document.getElementById('errorConfirmar').classList.toggle('visible', !coincideixen);
+            }
+        });
+        document.getElementById('formRegistre').addEventListener('submit', (e) => {
+            let valid = true;
+
+            const correuOk = validarCorreu(campCorreu.value);
+            campCorreu.classList.toggle('error', !correuOk);
+            document.getElementById('errorCorreu').classList.toggle('visible', !correuOk);
+            if (!correuOk) valid = false;
+
+            const coincideixen = campContrasenya.value === campConfirmar.value && campContrasenya.value !== '';
+            campConfirmar.classList.toggle('error', !coincideixen);
+            document.getElementById('errorConfirmar').classList.toggle('visible', !coincideixen);
+            if (!coincideixen) valid = false;
+
+            if (!valid) e.preventDefault();
+        });
+    </script>
+</body>
+</html>

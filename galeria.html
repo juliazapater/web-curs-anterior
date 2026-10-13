@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Zarautz Surf Festival 2026</title>
+    <link rel="stylesheet" href="../csstot/style.css">
+    <link rel="icon" href="../favicon.png">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="../IMG_6217-Photoroom.png" alt="Zarautz Surf Festival Logo">
+        </div>
+        <!-- Botó hamburger per a mòbil -->
+        <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu" id="menu">
+            <li><a href="../codi/index.html">Inici</a></li>
+            <li><a href="#">Lloguer</a>
+                <ul>
+                    <li><a href="../codi/index.html#taules">Taules</a></li>
+                </ul>
+            </li>
+            <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            <li><a href="../contacte/contacte.html">Contacte</a></li>
+            <li><a href="../registre/registre.html">Registre</a></li>
+            <li><a href="../galeria/galeria.html">Galeria</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- SECCIÓ 1: Slider d'imatges d'esdeveniments anteriors -->
+        <section>
+            <h2>Galeria d'Esdeveniments Anteriors</h2>
+            <p style="text-align:center; margin-bottom: 20px;"></p>
+
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Substitueix els src pels noms reals de les teves imatges -->
+                    <img src="../imagesgaleria/Gemini_Generated_Image_9y4mf99y4mf99y4m.png" alt="Festival anterior 1">
+                    <img src="../imagesgaleria/Gemini_Generated_Image_e803xge803xge803.png" alt="Festival anterior 2">
+                    <img src="../imagesgaleria/Gemini_Generated_Image_msf0dnmsf0dnmsf0.png" alt="Festival anterior 3">
+                    <img src="../imagesgaleria/Gemini_Generated_Image_pikbkspikbkspikb.png" alt="Festival anterior 4">
+                    <img src="../imagesgaleria/Gemini_Generated_Image_q59rx4q59rx4q59r.png" alt="Festival anterior 5">
+                </div>
+                <button class="slider-btn prev" id="sliderPrev" aria-label="Anterior">&#8249;</button>
+                <button class="slider-btn next" id="sliderNext" aria-label="Següent">&#8250;</button>
+            </div>
+            <!-- Punts indicadors generats pel JS -->
+            <div class="slider-dots" id="sliderDots"></div>
+        </section>
+
+        <!-- SECCIÓ 2: Graella 2x2 de l'esdeveniment -->
+        <section>
+            <h2>Imatges destacades</h2>
+            <p style="text-align:center; margin-bottom: 10px;">
+                Fes clic en una imatge per ampliar-la
+            </p>
+
+            <div class="galeria-grid">
+                <!-- Substitueix els src pels noms reals de les teves imatges -->
+                <img src="../imagesgaleria/Gemini_Generated_Image_892vvd892vvd892v.png" alt="Imatge galeria 1" onclick="obrirModal(this.src, this.alt)">
+                <img src="../imagesgaleria/Gemini_Generated_Image_8efsok8efsok8efs.png" alt="Imatge galeria 2" onclick="obrirModal(this.src, this.alt)">
+                <img src="../imagesgaleria/Gemini_Generated_Image_9qthon9qthon9qth.png" alt="Imatge galeria 3" onclick="obrirModal(this.src, this.alt)">
+                <img src="../imagesgaleria/Gemini_Generated_Image_yynjkdyynjkdyynj.png" alt="Imatge galeria 4" onclick="obrirModal(this.src, this.alt)">
+            </div>
+        </section>
+
+        <!-- Modal per ampliar imatges en fer clic -->
+        <div class="modal-galeria" id="modalGaleria" role="dialog" aria-modal="true">
+            <button class="tancar" id="tancarModal" aria-label="Tancar">&times;</button>
+            <img id="modalImg" src="" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <!-- Patrocinadors amb flipcard -->
+        <section class="patrocinadors">
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../decathlon.webp" alt="Decathlon">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Decathlon</span>
+                        <a href="https://www.decathlon.es" target="_blank" rel="noopener">decathlon.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Havaianas_brand_logo.png" alt="Havaianas">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Havaianas</span>
+                        <a href="https://www.havaianas.com" target="_blank" rel="noopener">havaianas.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Kutxabank.svg.png" alt="Kutxabank">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Kutxabank</span>
+                        <a href="https://www.kutxabank.es" target="_blank" rel="noopener">kutxabank.es</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../Prime_Hydration_logo.png" alt="Prime Hydration">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Prime</span>
+                        <a href="https://drinkprime.com" target="_blank" rel="noopener">drinkprime.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="patrocinator-card">
+                <div class="patrocinator-inner">
+                    <div class="patrocinator-front">
+                        <img src="../red-bull-logo-2-1.png" alt="Red Bull">
+                    </div>
+                    <div class="patrocinator-back">
+                        <span>Red Bull</span>
+                        <a href="https://www.redbull.com" target="_blank" rel="noopener">redbull.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="xxss">
+            <img src="../logotipo-de-instagram.png" width="50" height="auto" alt="Instagram">
+            <img src="../tik-tok.png" width="40" height="auto" alt="TikTok">
+            <img src="../youtube.png" width="35" height="auto" alt="YouTube">
+            <img src="../gorjeo.png" width="50" height="auto" alt="Twitter/X">
+            <p>
+                <a href="../Termes/Termes.html">Termes i Condicions</a> |
+                <a href="../cookies/cookies.html">Política de Cookies</a> |
+                <a href="../Privadesa/Privadesa.html">Política de Privadesa</a>
+            </p>
+            <p>&copy; 2026 Zarautz Surf Festival - By Marta &amp; Júlia</p>
+        </section>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            const obert = menu.classList.toggle('obert');
+            hamburger.classList.toggle('actiu');
+            hamburger.setAttribute('aria-expanded', obert);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('obert');
+                hamburger.classList.remove('actiu');
+                hamburger.setAttribute('aria-expanded', false);
+            }
+        });
+
+  
+        const track = document.getElementById('sliderTrack');
+        const imatges = track.querySelectorAll('img');
+        const dotsContainer = document.getElementById('sliderDots');
+        let indexActual = 0;
+        let intervalSlider;
+
+        imatges.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.setAttribute('aria-label', `Imatge ${i + 1}`);
+            if (i === 0) dot.classList.add('actiu');
+            dot.addEventListener('click', () => {
+                anarA(i);
+                reiniciarInterval();
+            });
+            dotsContainer.appendChild(dot);
+        });
+
+        function anarA(index) {
+            indexActual = (index + imatges.length) % imatges.length;
+            track.style.transform = `translateX(-${indexActual * 100}%)`;
+            dotsContainer.querySelectorAll('button').forEach((dot, i) => {
+                dot.classList.toggle('actiu', i === indexActual);
+            });
+        }
+
+        document.getElementById('sliderPrev').addEventListener('click', () => {
+            anarA(indexActual - 1);
+            reiniciarInterval();
+        });
+        document.getElementById('sliderNext').addEventListener('click', () => {
+            anarA(indexActual + 1);
+            reiniciarInterval();
+        });
+
+        function reiniciarInterval() {
+            clearInterval(intervalSlider);
+            intervalSlider = setInterval(() => anarA(indexActual + 1), 4000);
+        }
+        reiniciarInterval();
+        track.parentElement.addEventListener('mouseenter', () => clearInterval(intervalSlider));
+        track.parentElement.addEventListener('mouseleave', reiniciarInterval);
+
+        function obrirModal(src, alt) {
+            const modal = document.getElementById('modalGaleria');
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalImg').alt = alt;
+            modal.classList.add('visible');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function tancarModalGaleria() {
+            document.getElementById('modalGaleria').classList.remove('visible');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('tancarModal').addEventListener('click', tancarModalGaleria);
+
+        document.getElementById('modalGaleria').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('modalGaleria')) tancarModalGaleria();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') tancarModalGaleria();
+        });
+    </script>
+</body>
+</html>
